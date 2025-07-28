@@ -1,0 +1,10 @@
+name: Anticheat
+version: '${project.version}'
+main: me.levyuri.anticheatbase.Anticheat
+api-version: 1.21
+prefix: Anticheat
+authors: [LevYuri]
+description: Anticheat Anti-Cheat solution
+commands:
+  ac:
+    description: Anticheat's main command
