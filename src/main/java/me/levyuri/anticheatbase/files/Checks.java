@@ -61,12 +61,13 @@ public class Checks implements Initializer {
     public enum Setting {
         AIM("Aim", "", "AimAssist Check"),
         AIM_A("aim.a", true, "Should we enable this module?"),
-        AIMA_MAX_VL("aim.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
+        AIM_B("aim.b", true, "Should we enable this module?"),
+        AIM_MAX_VL("aim.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
         AIMA_COMMANDS("aim.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
 
         BADPACKETS("BadPackets", "", "BadPackets Check"),
         BADPACKETS_A("badpackets.a", true, "Should we enable this module?"),
-        BADPACKETSA_MAX_VL("badpackets.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
+        BADPACKETS_MAX_VL("badpackets.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
         BADPACKETSA_COMMANDS("badpackets.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount");
 
         private final String key;

@@ -2,6 +2,7 @@ package me.levyuri.anticheatbase.checks;
 
 import me.levyuri.anticheatbase.checks.annotations.Disabled;
 import me.levyuri.anticheatbase.checks.impl.aim.AimA;
+import me.levyuri.anticheatbase.checks.impl.aim.AimB;
 import me.levyuri.anticheatbase.checks.impl.badpackets.BadPacketsA;
 import me.levyuri.anticheatbase.checks.impl.fly.Fly10A;
 import me.levyuri.anticheatbase.checks.types.Check;
@@ -30,6 +31,7 @@ public class CheckHolder {
         addChecks(
 
                 new AimA(this.profile),
+                new AimB(this.profile),
 
                 new BadPacketsA(this.profile)
 
