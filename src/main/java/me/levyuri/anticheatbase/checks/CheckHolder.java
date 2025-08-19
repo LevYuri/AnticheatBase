@@ -1,10 +1,9 @@
 package me.levyuri.anticheatbase.checks;
 
 import me.levyuri.anticheatbase.checks.annotations.Disabled;
-import me.levyuri.anticheatbase.checks.impl.aim.AimA;
-import me.levyuri.anticheatbase.checks.impl.aim.AimB;
-import me.levyuri.anticheatbase.checks.impl.badpackets.BadPacketsA;
-import me.levyuri.anticheatbase.checks.impl.fly.Fly10A;
+import me.levyuri.anticheatbase.checks.impl.aim.*;
+import me.levyuri.anticheatbase.checks.impl.badpackets.*;
+import me.levyuri.anticheatbase.checks.impl.groundspoof.*;
 import me.levyuri.anticheatbase.checks.types.Check;
 import me.levyuri.anticheatbase.managers.profile.Profile;
 import me.levyuri.anticheatbase.processors.Packet;
@@ -33,7 +32,9 @@ public class CheckHolder {
                 new AimA(this.profile),
                 new AimB(this.profile),
 
-                new BadPacketsA(this.profile)
+                new BadPacketsA(this.profile),
+
+                new GroundSpoofA(this.profile)
 
         );
 

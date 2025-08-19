@@ -63,12 +63,17 @@ public class Checks implements Initializer {
         AIM_A("aim.a", true, "Should we enable this module?"),
         AIM_B("aim.b", true, "Should we enable this module?"),
         AIM_MAX_VL("aim.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
-        AIMA_COMMANDS("aim.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
+        AIM_COMMANDS("aim.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
 
         BADPACKETS("BadPackets", "", "BadPackets Check"),
         BADPACKETS_A("badpackets.a", true, "Should we enable this module?"),
         BADPACKETS_MAX_VL("badpackets.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
-        BADPACKETSA_COMMANDS("badpackets.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount");
+        BADPACKETS_COMMANDS("badpackets.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount"),
+
+        GROUNDSPOOF("GroundSpoof", "", "GroundSpoof Check"),
+        GROUNDSPOOF_A("groundspoof.a", true, "Should we enable this module?"),
+        GROUNDSPOOF_MAX_VL("groundspoof.max_vl", 10, "The maximum violation amount a player needs to reach in order to get punished"),
+        GROUNDSPOOF_COMMANDS("groundspoof.commands", Collections.singletonList("kick %player% Unfair Advantage"), "The commands that will get executed once a player reaches the maximum violation amount");
 
         private final String key;
         private final Object defaultValue;
